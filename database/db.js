@@ -5,7 +5,7 @@ const dburl = config.get("DBURL");
 
 const connectDB = async () => {
   try {
-    mongoose.set("strictQuery", false);
+    mongoose.set("strictQuery", false);+
     await mongoose.connect(dburl, {
       useNewUrlParser: true,
     });
@@ -16,4 +16,5 @@ const connectDB = async () => {
   }
 };
 
-module.exports = connectDB
+module.exports = connectDB;
+
